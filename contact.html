@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LAK - Lubelska Agencja Kosmiczna</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="space-cover contact-cover ">
+      <nav>
+          <h2>L.A.K.</h2>
+
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Zostań astronautą</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <h1>Opowiedz nam o sobie</h1>
+        <form>
+          <fieldset>
+            <legend><i class="legend-icon icon-1"></i>Podstawowe informacje o kandydacie</legend>
+
+            <div>
+              <label for="user_first_name">Twoje imię:</label>
+              <input type="text" id="user_first_name" name="user_first_name" pattern="[A-Za-z{ążźółńęć}]+" required/>
+            </div>
+
+            <div>
+              <label for="user_last_name">Twoje nazwisko:</label>
+              <input type="text" id="user_last_name" name="user_last_name" pattern="[A-Za-zążźółńęć]+" required/>
+            </div>
+
+            <div>
+              <label for="user_phone_number">Twój numer telefonu:</label>
+              <input type="text" id="user_phone_number" name="user_phone_number" pattern="[0-9\+\s]{9,16}" required/>
+            </div>
+
+            <div>
+              <label for="user_mail">Twój email:</label>
+              <input type="email" id="user_mail" name="user_mail" pattern=".*?@?[^@]*\.+.*" required/>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i class="legend-icon icon-2"></i>Poznajmy się bliżej:</legend>
+
+            <div>
+              <label for="planet-select">Twoja ulubiona planeta:</label>
+                <select id="planet-select" name="planet-select">
+                    <option>Merkury</option>
+                    <option>Wenus</option>
+                    <option>Ziemia</option>
+                    <option>Mars</option>
+                    <option>Jowisz</option>
+                    <option>Saturn</option>
+                    <option>Uran</option>
+                    <option>Neptun</option>
+                    <option>Pluton (haha)</option>
+                </select>
+            </div>
+
+            <div class="checkbox-form-container">
+              <h4>Twoje umiejętności - zaznacz wszystkie:</h4>
+                
+              <div><input type="checkbox" id="rockets" name="rockets">
+                <label for="rockets">Doświadczenie w naprawie silników rakietowych</label></div>
+              
+              <div><input type="checkbox" id="math" name="math">
+                <label for="math">Skomplikowana fizyka i/lub matematyka</label></div>
+              
+              <div><input type="checkbox" id="fly" name="fly">
+                <label for="fly">Pilotaż myśliwca (ponad 10 000h doświadczenia)</label></div>
+
+              <div><input type="checkbox" id="breathe" name="breathe">
+                <label for="breathe">Oddychanie beztlenowe</label></div>
+            </div>
+
+           
+          </fieldset>
+          <input type="submit" name="submit" value="Dodaj do local storage" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+            <div class="container row">
+                <div class="col3">
+                        <h1>Lubelska Agencja kosmiczna</h1>
+                        <p>Wszystkie prawa zastrzezone</p>
+                </div>
+                
+                <div class="col2 push-down">
+                        <p class="author">Strona autorstwa <a href="https://wikflis.me">Wiktora Flisa</a></p>
+                </div>
+            </div>
+            <div class="space-side"></div>
+        </footer>
+        <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>LAK - Lubelska Agencja Kosmiczna</title>
+    </head>
+    <body>
+        
+        <div class="space-cover gallery-cover">
+                <nav>
+                        <h2>L.A.K.</h2>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="gallery.html">Galeria</a></li>
+                        <li><a href="contact.html">Zostań astronautą</a></li>
+                    </ul>
+                </nav>
+                <div class="container"> <button id="newImage" onclick="makeGallery()">Nowe losowe zdjecie NASA</button> </div>
+                <div id="gallery-container" class="container"></div>
+        </div>
+
+
+        <footer>
+            <div class="container row">
+                <div class="col3">
+                        <h1>Lubelska Agencja kosmiczna</h1>
+                        <p>Wszystkie prawa zastrzezone</p>
+                </div>
+                
+                <div class="col2 push-down">
+                        <p class="author">Strona autorstwa <a href="https://wikflis.me">Wiktora Flisa</a></p>
+                </div>
+            </div>
+            <div class="space-side"></div>
+        </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <script>
+        const gallery = document.getElementById('gallery-container');
+    </script>
+    </body>
+</html>
